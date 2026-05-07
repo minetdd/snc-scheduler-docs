@@ -14,23 +14,15 @@ hero:
       variant: minimal
 ---
 
-import { Card, CardGrid } from '@astrojs/starlight/components';
+import { LinkCard, CardGrid } from '@astrojs/starlight/components';
 
 ## What is SNC Scheduler?
 
 SNC Scheduler is a self-hosted appointment booking app. Set your weekly availability, define your services, and share a booking link — clients pick a time, you get a confirmation email and a calendar event.
 
 <CardGrid>
-  <Card title="Quick setup" icon="rocket">
-    Run `npm run setup` and you're up in minutes — no manual config files.
-  </Card>
-  <Card title="Embeddable" icon="puzzle">
-    Drop a single `<iframe>` onto any website to embed the booking form.
-  </Card>
-  <Card title="Calendar sync" icon="calendar">
-    Confirmed bookings appear in Google Calendar automatically.
-  </Card>
-  <Card title="Self-hosted" icon="laptop">
-    Deploy on Render, Vercel, or anywhere Node.js runs. You own the data.
-  </Card>
+  <LinkCard title="Quick setup" href="/getting-started/" description="Run npm run setup and you're live in minutes — no manual config files." />
+  <LinkCard title="Embeddable" href="/embedding/" description="Drop a single iframe onto any website to embed the booking form." />
+  <LinkCard title="Calendar sync" href="/integrations/google-calendar/" description="Confirmed bookings appear in Google Calendar automatically." />
+  <LinkCard title="Self-hosted" href="/getting-started/" description="Deploy on Render, Vercel, or anywhere Node.js runs. You own the data." />
 </CardGrid>
