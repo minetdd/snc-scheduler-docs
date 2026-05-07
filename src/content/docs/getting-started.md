@@ -65,6 +65,14 @@ http://localhost:3000/book/jane
 2. Add environment variables in project settings
 3. Use any hosted Postgres (Neon, Supabase, Railway)
 
+## Using the booking form on another site
+
+Once your instance is deployed, you can embed the booking form into any website with a single `<iframe>` — no additional setup required.
+
+import { LinkCard } from '@astrojs/starlight/components';
+
+<LinkCard title="Embedding" href="/embedding/" description="Drop the booking form into any website using a single iframe snippet." />
+
 ### Environment variables reference
 
 | Variable | Required | Description |
