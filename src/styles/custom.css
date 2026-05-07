@@ -1,0 +1,69 @@
+/* ── Brand colours ───────────────────────────────────────────────────────────
+   Yellow: #ffeb3b  |  Blue: #2196f3  |  Red: #f44336
+   Background: #000000
+   ─────────────────────────────────────────────────────────────────────────── */
+
+/* Force dark theme regardless of system preference */
+:root {
+  color-scheme: dark;
+
+  /* Accent — yellow on black */
+  --sl-color-accent-low:  #5c4a00;
+  --sl-color-accent:      #ffeb3b;
+  --sl-color-accent-high: #fff9c4;
+
+  /* Background — true black */
+  --sl-color-bg:         #000000;
+  --sl-color-bg-nav:     #0d0d0d;
+  --sl-color-bg-sidebar: #0a0a0a;
+
+  /* Text scale */
+  --sl-color-white: #f5f5f5;
+  --sl-color-gray-1: #e0e0e0;
+  --sl-color-gray-2: #bdbdbd;
+  --sl-color-gray-3: #757575;
+  --sl-color-gray-4: #424242;
+  --sl-color-gray-5: #212121;
+  --sl-color-gray-6: #111111;
+  --sl-color-black:  #000000;
+
+  /* Secondary brand palette */
+  --snc-blue: #2196f3;
+  --snc-red:  #f44336;
+}
+
+/* ── Circular logo ───────────────────────────────────────────────────────────
+   Makes the nav logo circular, matching sumoninjacreative.com.
+   Applied once the logo file is added to public/logo.png.
+   ─────────────────────────────────────────────────────────────────────────── */
+a.site-title img {
+  border-radius: 50%;
+  background: #1a1a1a;
+  padding: 2px;
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+/* ── Inline code ─────────────────────────────────────────────────────────────
+   Blue tint to bring in the secondary brand colour.
+   ─────────────────────────────────────────────────────────────────────────── */
+code:not(pre code) {
+  color: var(--snc-blue);
+  background-color: rgba(33, 150, 243, 0.12);
+  border-color: rgba(33, 150, 243, 0.25);
+}
+
+/* ── Hero CTA button ─────────────────────────────────────────────────────────
+   Yellow with black text for strong contrast on the landing page.
+   ─────────────────────────────────────────────────────────────────────────── */
+.hero .action.primary {
+  background: var(--sl-color-accent);
+  color: #000;
+  border-color: var(--sl-color-accent);
+}
+
+.hero .action.primary:hover {
+  background: var(--sl-color-accent-high);
+  border-color: var(--sl-color-accent-high);
+}
