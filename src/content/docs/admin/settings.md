@@ -1,6 +1,24 @@
 ---
 title: Settings
-description: Manage your calendar feed, Google Calendar connection, and embed code.
+description: Manage your profile, calendar feed, Google Calendar connection, and embed code.
+---
+
+## Profile
+
+Update your name, username, password, and timezone at **Admin → Profile**.
+
+### Timezone
+
+Set your timezone so booking slots are generated at the correct wall-clock times. Clients see slots converted to their own browser timezone automatically.
+
+1. Go to **Admin → Profile**
+2. Open the **Timezone** dropdown and select your timezone
+3. Click **Save Changes**
+
+:::caution
+If you change your timezone, any availability you've already entered is still stored as the same wall-clock times (e.g. "8:00 AM") — they will simply be interpreted in the new timezone going forward. Review your availability after changing this setting.
+:::
+
 ---
 
 ## Google Calendar
