@@ -7,8 +7,7 @@ export default defineConfig({
 		starlight({
 			title: 'SNC Scheduler',
 			description: 'Self-hosted scheduling — set your availability, share a booking link, let others pick a time.',
-			// Logo: save your logo PNG to public/logo.png then uncomment:
-			// logo: { src: './public/logo.png', alt: 'Sumo Ninja Creative' },
+			logo: { src: './public/logo.png', alt: 'Sumo Ninja Creative' },
 			social: [
 				{ icon: 'github', label: 'GitHub', href: 'https://github.com/minetdd/snc-scheduler' },
 			],

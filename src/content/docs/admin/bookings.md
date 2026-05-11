@@ -20,6 +20,10 @@ The bookings page lists all bookings across all statuses — pending, confirmed,
 - **Reschedule** — change the date and time of a confirmed booking; client receives a reschedule email and the Google Calendar event is updated
 - **Create booking** — create a booking directly for a client without going through the public booking page
 
+## Client confirmation screen
+
+After a client submits a booking, the confirmation screen shows an **Add to Calendar** button. Clicking it downloads an `.ics` file they can open in Apple Calendar, Google Calendar, Outlook, or any calendar app. A calendar file is also attached to the confirmation email sent when you confirm the booking.
+
 ## Filtering
 
-Use the tabs at the top of the page to filter by status (All / Pending / Confirmed / Cancelled). Bookings are paginated — use the navigation at the bottom to move between pages.
+Use the tabs at the top of the page to filter by status (Upcoming / Past / Cancelled). Bookings are paginated — use the navigation at the bottom to move between pages.

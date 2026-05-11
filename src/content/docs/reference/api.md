@@ -13,7 +13,7 @@ Resolves a username to a user ID.
 
 **Response**
 ```json
-{ "id": "uuid", "name": "Jane Smith" }
+{ "id": "uuid", "name": "Jane Smith", "timezone": "America/Denver" }
 ```
 
 Returns `404` if the username does not exist.
@@ -49,7 +49,7 @@ Returns active service types for a user.
 
 ### `GET /api/public/slots`
 
-Returns available booking slots for a service on a given date. Excludes already-booked slots and, if Google Calendar is connected, existing calendar events.
+Returns available booking slots for a service on a given date. Excludes already-booked slots and, if Google Calendar is connected, existing calendar events. Also enforces the admin's booking window — dates outside the minimum notice period or maximum advance days return an empty array.
 
 **Query parameters**
 
@@ -66,7 +66,7 @@ Returns available booking slots for a service on a given date. Excludes already-
 ]
 ```
 
-Returns `400` if parameters are missing, `404` if the service does not exist or is inactive.
+Returns an empty array `[]` if the date is outside the booking window. Returns `400` if parameters are missing, `404` if the service does not exist or is inactive.
 
 ---
 
