@@ -15,10 +15,10 @@ The bookings page lists all bookings across all statuses — pending, confirmed,
 
 ## Actions
 
-- **Confirm** — accepts a pending booking
+- **Confirm** — accepts a pending booking. If the booking has a client location and you have a base address set in your Profile, the travel time fields are auto-filled with the estimated drive time (+ 10 min buffer). You can adjust before confirming.
 - **Cancel** — cancels any booking; an optional reason field is shown in the cancel dialog. If filled in, the reason appears in the cancellation email sent to the client.
-- **Reschedule** — change the date and time of a confirmed booking; client receives a reschedule email and the Google Calendar event is updated
-- **Create booking** — create a booking directly for a client without going through the public booking page
+- **Reschedule** — change the date and time of a confirmed booking; client receives a reschedule email and the Google Calendar event is updated. Travel time is auto-calculated when the dialog opens.
+- **Create booking** — create a booking directly for a client without going through the public booking page. Travel time is auto-calculated when you fill in the session location.
 
 ## Client confirmation screen
 

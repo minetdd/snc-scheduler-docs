@@ -85,3 +85,4 @@ import { LinkCard } from '@astrojs/starlight/components';
 | `GOOGLE_CLIENT_ID` | Optional | Enables Google Calendar sync |
 | `GOOGLE_CLIENT_SECRET` | Optional | Google OAuth client secret |
 | `GOOGLE_REDIRECT_URI` | Optional | Must match your Google Cloud Console setting |
+| `OPENROUTESERVICE_API_KEY` | Optional | Enables travel time auto-calculation on booking confirmation |
