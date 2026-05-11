@@ -66,7 +66,7 @@ Returns available booking slots for a service on a given date. Excludes already-
 ]
 ```
 
-Returns an empty array `[]` if the date is outside the booking window. Returns `400` if parameters are missing, `404` if the service does not exist or is inactive.
+Returns an empty array `[]` if the date falls on a blocked date or is outside the booking window. Returns `400` if parameters are missing, `404` if the service does not exist or is inactive.
 
 ---
 
@@ -93,6 +93,78 @@ Creates a booking. Returns `409` if the slot is already taken, `429` if the rate
 **Response** (`201`)
 ```json
 { "id": "uuid" }
+```
+
+---
+
+---
+
+## Admin routes — Blocked Dates
+
+All routes require an authenticated admin session.
+
+### `GET /api/admin/exceptions`
+
+Returns all blocked date ranges for the authenticated user, ordered by start date.
+
+**Response**
+```json
+[
+  { "id": "uuid", "startDate": "2026-12-24T00:00:00.000Z", "endDate": "2026-12-26T23:59:59.999Z", "label": "Christmas" }
+]
+```
+
+---
+
+### `POST /api/admin/exceptions`
+
+Creates a blocked date range.
+
+**Request body**
+```json
+{
+  "startDate": "2026-12-24",
+  "endDate": "2026-12-26",
+  "label": "Christmas"
+}
+```
+
+`endDate` and `label` are optional. If `endDate` is omitted, the block covers the single day of `startDate`.
+
+**Response** (`201`) — the created exception object.
+
+---
+
+### `DELETE /api/admin/exceptions/[id]`
+
+Removes a blocked date range. Returns `404` if the exception does not belong to the authenticated user.
+
+---
+
+### `GET /api/admin/exceptions/conflicts`
+
+Checks whether any active bookings fall within a date range, before committing to blocking those dates.
+
+**Query parameters**
+
+| Parameter | Required | Description |
+|---|---|---|
+| `startDate` | ✅ | Start of range (`YYYY-MM-DD`) |
+| `endDate` | | End of range (`YYYY-MM-DD`). Defaults to `startDate`. |
+
+**Response**
+```json
+{
+  "count": 1,
+  "bookings": [
+    {
+      "id": "uuid",
+      "bookerName": "Alex Smith",
+      "serviceName": "Standard Session",
+      "slotStart": "2026-12-24T14:00:00.000Z"
+    }
+  ]
+}
 ```
 
 ---

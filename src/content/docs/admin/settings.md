@@ -7,6 +7,10 @@ description: Manage your profile, calendar feed, Google Calendar connection, and
 
 Update your name, username, password, and timezone at **Admin → Profile**.
 
+:::tip
+All client-facing emails (booking request, confirmed, cancelled, rescheduled) include a **Reply-To** header set to your account email address. When a client hits Reply, their message goes directly to you — not to a no-reply address.
+:::
+
 ### Timezone
 
 Set your timezone so booking slots are generated at the correct wall-clock times. Clients see slots converted to their own browser timezone automatically.
