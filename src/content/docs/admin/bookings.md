@@ -16,7 +16,7 @@ The bookings page lists all bookings across all statuses — pending, confirmed,
 ## Actions
 
 - **Confirm** — accepts a pending booking
-- **Cancel** — cancels any booking; client is notified by email
+- **Cancel** — cancels any booking; an optional reason field is shown in the cancel dialog. If filled in, the reason appears in the cancellation email sent to the client.
 - **Reschedule** — change the date and time of a confirmed booking; client receives a reschedule email and the Google Calendar event is updated
 - **Create booking** — create a booking directly for a client without going through the public booking page
 

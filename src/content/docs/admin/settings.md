@@ -19,6 +19,21 @@ Set your timezone so booking slots are generated at the correct wall-clock times
 If you change your timezone, any availability you've already entered is still stored as the same wall-clock times (e.g. "8:00 AM") — they will simply be interpreted in the new timezone going forward. Review your availability after changing this setting.
 :::
 
+### Booking Window
+
+Control how far in advance clients can book.
+
+| Setting | Description | Default |
+|---|---|---|
+| **Minimum notice** | How many hours ahead a client must book. Set to `24` to require a day's notice. | 0 (same-day allowed) |
+| **Max advance booking** | How many days into the future a client can book. | 60 days |
+
+Dates outside the allowed window return no available slots on the public booking page — clients simply won't see those dates as selectable.
+
+1. Go to **Admin → Profile**
+2. Set **Minimum notice** (hours) and/or **Max advance booking** (days)
+3. Click **Save Changes**
+
 ---
 
 ## Google Calendar
