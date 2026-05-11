@@ -17,6 +17,7 @@ export default defineConfig({
 				{
 					label: 'Admin Guide',
 					items: [
+						{ label: 'Dashboard', slug: 'admin/dashboard' },
 						{ label: 'Availability', slug: 'admin/availability' },
 						{ label: 'Services', slug: 'admin/services' },
 						{ label: 'Bookings', slug: 'admin/bookings' },
