@@ -29,6 +29,7 @@ export default defineConfig({
 					items: [
 						{ label: 'Resend (Email)', slug: 'integrations/resend' },
 						{ label: 'Google Calendar', slug: 'integrations/google-calendar' },
+						{ label: 'Morning Summary Email', slug: 'integrations/morning-summary' },
 					],
 				},
 				{ label: 'Embedding', slug: 'embedding' },

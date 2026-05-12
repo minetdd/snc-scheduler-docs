@@ -22,6 +22,10 @@ Services (called *service types*) define what clients can book — the name, dur
 | **Price** | Optional — shown as a badge on the booking page |
 | **Colour** | Used to identify the service on the admin calendar |
 
+## Reordering services
+
+Drag the ⠿ handle on any service card to change the order. The order is saved immediately and reflected on the public booking page — clients see services in the order you set.
+
 ## Deactivating a service
 
 Toggle a service inactive to hide it from the public booking page without deleting it. Existing bookings for that service are not affected.
