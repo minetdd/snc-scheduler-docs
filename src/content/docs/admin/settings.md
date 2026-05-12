@@ -13,7 +13,7 @@ All client-facing emails (booking request, confirmed, cancelled, rescheduled) in
 
 ### Timezone
 
-Set your timezone so booking slots are generated at the correct wall-clock times. Clients see slots converted to their own browser timezone automatically.
+Set your timezone so booking slots are generated at the correct wall-clock times. All times shown to clients on the booking page and in confirmation emails use your configured timezone — so a slot at 9:00 AM always means 9:00 AM in your location, regardless of where the client is viewing from.
 
 1. Go to **Admin → Profile**
 2. Open the **Timezone** dropdown and select your timezone
@@ -53,6 +53,21 @@ Dates outside the allowed window return no available slots on the public booking
 1. Go to **Admin → Profile**
 2. Set **Minimum notice** (hours) and/or **Max advance booking** (days)
 3. Click **Save Changes**
+
+### Notification Preferences
+
+Control which automated emails you receive as the admin.
+
+| Toggle | Description | Default |
+|---|---|---|
+| **New booking alerts** | Email when a client submits a new booking request | On |
+| **Daily morning summary** | A summary of today's appointments sent each morning | On |
+
+Changes take effect immediately — no save button required.
+
+:::note
+Turning off **New booking alerts** only affects the admin notification. The client still receives their booking request confirmation email regardless.
+:::
 
 ---
 
