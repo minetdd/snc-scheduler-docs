@@ -3,6 +3,21 @@ title: Getting Started
 description: Clone, configure, and deploy SNC Scheduler.
 ---
 
+## Recommended setup order
+
+Follow these steps in order on your first run — each one unlocks the next:
+
+1. **Clone and run setup wizard** — creates your database, owner account, and `.env`
+2. **Set your username** — needed before you can share a booking link
+3. **Set your timezone** — all slot times are based on this
+4. **Create your services** — clients can't book without at least one active service
+5. **Set your availability** — define which days and hours you're open
+6. **Verify your Resend domain** — so confirmation emails reach real clients
+7. **Connect Google Calendar** — optional but recommended to prevent double-booking
+8. **Share your booking link** — you're live
+
+---
+
 ## Prerequisites
 
 - Node.js 18+

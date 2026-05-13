@@ -30,7 +30,9 @@ Every booking confirmation email sent to the client includes a **Manage My Booki
 
 The manage page respects your booking window settings (minimum notice, maximum advance days) and blocked dates. Clients cannot reschedule to a blocked date or a slot within your minimum notice period. They also cannot modify a booking that has already passed.
 
-When a client cancels or reschedules, the relevant email is sent to both parties automatically.
+When a client **cancels**, both parties receive a cancellation email and the slot is freed.
+
+When a client **reschedules**, the booking is moved to the new time and its status is reset to **Pending** — you must confirm it again in the admin panel before it is considered locked in. A reschedule email is sent to the client informing them of the new time, and you will receive a new booking alert if you have admin notifications enabled.
 
 :::note
 The manage link is unique and unguessable — no login is required. If a booking was created before this feature was introduced it will not have a manage link in its emails.

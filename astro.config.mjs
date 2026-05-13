@@ -14,6 +14,7 @@ export default defineConfig({
 			customCss: ['./src/styles/custom.css'],
 			sidebar: [
 				{ label: 'Getting Started', slug: 'getting-started' },
+				{ label: 'Client Experience', slug: 'client-experience' },
 				{
 					label: 'Admin Guide',
 					items: [
